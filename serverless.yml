@@ -13,18 +13,5 @@ functions:
     handler: handler.endpoint
     events:
       - http: GET /
-        cors:
-            origin: '*'
-            headers:
-              - Content-Type
-              - X-Amz-Date
-              - Authorization
-              - X-Api-Key
-              - X-Amz-Security-Token
-              - X-Amz-User-Agent
-              - Startlower
-              - text
-              - Access-Control-Allow-Headers
-              - Access-Control-Allow-Origin
-            allowCredentials: false
-     
+        cors: true
+           
